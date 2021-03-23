@@ -45,7 +45,7 @@ with open("d:\\project\\data\\goods_id.txt",'r') as f:
 #根据品牌id，构造url，并获取对应json
         url = "https://api.替换.com/api/goods/detail?id="
         url_new = url + line
-        #随机休眠10秒
+        #随机休眠5秒
         sleeptime = random.randint(0, 5)
         time.sleep(sleeptime)
         get_info = requests.get(url_new,headers=head).content
